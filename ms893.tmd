@@ -281,84 +281,84 @@
             // Airfoils
 
             <[airfoil][AirfoilHorizontalStabilizer][]
-                <[float64][Cl0][0.0]>
-                <[float64][Cd0][0.0052]>
-                <[float64][Cm0][0.0]>
+                <[float64][Cl0][0.000000]>
+                <[float64][Cd0][0.005200]>
+                <[float64][Cm0][0.000000]>
                 <[float64][ClAlpha][6.016057]>
                 <[float64][CdAlpha][0.630254]>
-                <[float64][CmAlpha][0.0]>
-                <[float64][ClFlap][2.1]>
-                <[float64][CdFlap][0.005]>
-                <[float64][CmFlap][-0.2]>
-                <[float64][Cd0Base][0.005]>
-                <[float64][ClAlphaBase][1.98]>
-                <[float64][CdAlphaBase][1.485]>
-                <[float64][CmAlphaBase][-0.45]>
-                <[float64][ClFlapBase][0.0]>
-                <[float64][AttachedCenter][0.0]>
-                <[float64][AttachedRange][0.235619]>
-                <[float64][StallRange][0.061087]>
-                <[float64][AttachedCenterFlap][-0.12]>
+                <[float64][CmAlpha][0.000000]>
+                <[float64][ClFlap][1.500000]>
+                <[float64][CdFlap][0.005000]>
+                <[float64][CmFlap][-0.200000]>
+                <[float64][Cd0Base][0.005000]>
+                <[float64][ClAlphaBase][1.980000]>
+                <[float64][CdAlphaBase][1.485000]>
+                <[float64][CmAlphaBase][-0.450000]>
+                <[float64][ClFlapBase][0.000000]>
+                <[float64][AttachedCenter][0.000000]>
+                <[float64][AttachedRange][0.471239]>
+                <[float64][StallRange][0.296706]>
+                <[float64][AttachedCenterFlap][-0.120000]>
             >
             <[airfoil][AirfoilVerticalStabilizer][]
-                <[float64][Cl0][0.0]>
-                <[float64][Cd0][0.0052]>
-                <[float64][Cm0][0.0]>
+                <[float64][Cl0][0.000000]>
+                <[float64][Cd0][0.005200]>
+                <[float64][Cm0][0.000000]>
                 <[float64][ClAlpha][6.016057]>
                 <[float64][CdAlpha][0.630254]>
-                <[float64][CmAlpha][0.0]>
-                <[float64][ClFlap][2.1]>
-                <[float64][CdFlap][0.005]>
-                <[float64][CmFlap][-0.2]>
-                <[float64][Cd0Base][0.005]>
-                <[float64][ClAlphaBase][1.98]>
-                <[float64][CdAlphaBase][1.485]>
-                <[float64][CmAlphaBase][-0.45]>
-                <[float64][ClFlapBase][0.0]>
-                <[float64][AttachedCenter][0.0]>
-                <[float64][AttachedRange][0.235619]>
-                <[float64][StallRange][0.061087]>
-                <[float64][AttachedCenterFlap][-0.12]>
+                <[float64][CmAlpha][0.000000]>
+                <[float64][ClFlap][1.500000]>
+                <[float64][CdFlap][0.005000]>
+                <[float64][CmFlap][-0.200000]>
+                <[float64][Cd0Base][0.005000]>
+                <[float64][ClAlphaBase][1.980000]>
+                <[float64][CdAlphaBase][1.485000]>
+                <[float64][CmAlphaBase][-0.450000]>
+                <[float64][ClFlapBase][0.000000]>
+                <[float64][AttachedCenter][0.000000]>
+                <[float64][AttachedRange][0.471239]>
+                <[float64][StallRange][0.296706]>
+                <[float64][AttachedCenterFlap][-0.120000]>
             >
             <[airfoil][AirfoilRoot][]
-                <[float64][Cl0][0.25]>
-                <[float64][Cd0][0.008]>
+                <[float64][Cl0][0.250000]>
+                <[float64][Cd0][0.008000]>
                 <[float64][Cm0][-0.040385]>
                 <[float64][ClAlpha][5.844170]>
                 <[float64][CdAlpha][0.802141]>
                 <[float64][CmAlpha][0.055092]>
-                <[float64][ClFlap][2.5]>
-                <[float64][CdFlap][0.005]>
-                <[float64][CmFlap][-0.2]>
-                <[float64][Cd0Base][0.005]>
-                <[float64][ClAlphaBase][3.0]>
-                <[float64][CdAlphaBase][2.25]>
-                <[float64][CmAlphaBase][-0.45]>
-                <[float64][ClFlapBase][0.0]>
-                <[float64][AttachedCenter][0.0]>
-                <[float64][AttachedRange][0.331613]>
-                <[float64][StallRange][0.157080]>
-                <[float64][AttachedCenterFlap][-0.12]>
+                <[float64][ClFlap][1.500000]>
+                <[float64][CdFlap][0.005000]>
+                <[float64][CmFlap][-0.200000]>
+                <[float64][Cd0Base][0.005000]>
+                <[float64][ClAlphaBase][3.000000]>
+                <[float64][CdAlphaBase][2.250000]>
+                <[float64][CmAlphaBase][-0.450000]>
+                <[float64][ClFlapBase][0.000000]>
+                <[float64][AttachedCenter][0.000000]>
+                <[float64][AttachedRange][0.663225]>
+                <[float64][StallRange][0.488692]>
+                <[float64][AttachedCenterFlap][-0.120000]>
             >
             <[airfoil][AirfoilTip][]
-                <[float64][Cl0][0.25]>
-                <[float64][Cd0][0.008]>
+                <[float64][Cl0][0.250000]>
+                <[float64][Cd0][0.008000]>
                 <[float64][Cm0][-0.040385]>
                 <[float64][ClAlpha][5.844170]>
                 <[float64][CdAlpha][0.802141]>
                 <[float64][CmAlpha][0.055092]>
-                <[float64][ClFlap][2.1]>
-                <[float64][CdFlap][0.005]>
-                <[float64][CmFlap][-0.2]>
-                <[float64][Cd0Base][0.005]>
-                <[float64][ClAlphaBase][3.0]>
-                <[float64][CdAlphaBase][2.25]>
-                <[float64][CmAlphaBase][-0.45]>
-                <[float64][ClFlapBase][0.0]>
-                <[float64][AttachedCenter][0.0]>
-                <[float64][AttachedRange][0.331613]>
-                <[float64][StallRange][0.157080]>
-                <[float64][AttachedCenterFlap][-0.12]>
+                <[float64][ClFlap][1.500000]>
+                <[float64][CdFlap][0.005000]>
+                <[float64][CmFlap][-0.200000]>
+                <[float64][Cd0Base][0.005000]>
+                <[float64][ClAlphaBase][3.000000]>
+                <[float64][CdAlphaBase][2.250000]>
+                <[float64][CmAlphaBase][-0.450000]>
+                <[float64][ClFlapBase][0.000000]>
+                <[float64][AttachedCenter][0.000000]>
+                <[float64][AttachedRange][0.663225]>
+                <[float64][StallRange][0.488692]>
+                <[float64][AttachedCenterFlap][-0.120000]>
             >
 
             // Aerowings
@@ -965,7 +965,7 @@
                 <[float64][InputTemperature] [EngineHousing.Output]>
                 <[float64][AddHeat]          [EngineHousing.AddHeat]>
                 <[float64][RotationInertia][1.1776]>
-                <[float64][ThrottleIdle][0.1]>
+                <[float64][ThrottleIdle][0.12]>
                 <[float64][Friction][50.0]>
                 <[float64][RatedRotationSpeed][270]>
                 <[float64][RatedPower][134226]>
