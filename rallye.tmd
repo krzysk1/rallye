@@ -2050,19 +2050,19 @@
             >
             <[graphics_input][vsi_Needle_2Input][]
                 <[uint32][InputID][VerticalSpeedIndicatorNeedle.Output]>
-                <[float64][Scaling][196.848]>
+                <[float64][Scaling][1.96848]>
             >
             <[graphics_linear_interpolation][vsi_Needle_2Mapping][]
                 <[string8][Input][vsi_Needle_2Input.Output]>
-                <[tmvector2d][Map][(-2000.0 -3.028146)
-									(-1500.0 -2.295108)
-									(-1000.0 -1.422443)
-									(-500.0 -0.616101)
+                <[tmvector2d][Map][(-20.0 -3.028146)
+									(-15.0 -2.295108)
+									(-10.0 -1.422443)
+									(-5.0 -0.616101)
 									(0.0 0)
-									(500.0 0.623083)
-									(1000.0 1.422443)
-									(1500.0 2.286381)
-									(2000.0 3.017674)]>
+									(5.0 0.623083)
+									(10.0 1.422443)
+									(15.0 2.286381)
+									(20.0 3.017674)]>
             >
             <[hingedbodygraphics][vsi_Needle_2][]
                 <[string8][GeometryList][ VsiNeedle ]>

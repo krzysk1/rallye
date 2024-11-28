@@ -7,15 +7,15 @@
         <[string8][DisplayNameFull][Socata Rallye MS.893E]>
         <[list_localized_text][Descriptions][]
             <[localized_text][element][0]
-                <[string8][Language][en]>
+                <[string8u][Language][en]>
                 <[string8][Text][The SOCATA Rallye was a light aircraft manufactured in France by SOCATA, beginning in the 1960s. It was originally by Morane-Saulnier as the MS.880. It was eventually replaced in production by the Socata TB series in the 1980s, but continued in production in Poland under licence by PZL as the PZL Koliber. Converted from FlightGear by Krzysztof Kaniewski. 3D model by Patrice Poly (3D, FDM), Beber (Sounds).]>
             >
             <[localized_text][element][1]
-                <[string8][Language][de]>
+                <[string8u][Language][de]>
                 <[string8][Text][Die viersitzige einmotorige Morane-Saulnier Rallye ist ein Kleinflugzeug. Der freitragende Ganzmetall-Tiefdecker wird vor allem als Schleppflugzeug für Schleppbanner und Segelflugzeuge eingesetzt. Konvertiert von FlightGear durch Krzysztof Kaniewski. 3d-Modell erstellt von Patrice Poly (3D, FDM), Beber (Sounds).]>
 			>
             <[localized_text][element][2]
-                <[string8][Language][pl]>
+                <[string8u][Language][pl]>
                 <[string8][Text][SOCATA Rallye był lekkim samolotem produkowanym we Francji przez firmę SOCATA, począwszy od lat 60-tych. Pierwotnie był produkowany przez Morane-Saulnier jako MS.880. Ostatecznie został zastąpiony w produkcji przez serię Socata TB w latach 80-tych, ale kontynuował produkcję w Polsce na licencji PZL jako PZL Koliber. Przerobiony z FlightGear przez Krzysztofa Kaniewskiego. Model 3D autorstwa Patrice Poly (3D, FDM), Beber (dźwięki).]>
 			>
         >
@@ -26,18 +26,18 @@
         <[float64][ApproachAirspeed][25.0]>
         <[float64][CruiseAirspeed][67.5]>
         <[float64][CruiseSpeed][87.5]>
-		<[tmvector2d][NormalAirspeedRange][ 25.0 67.5 ]>
-		<[tmvector2d][CautionAirspeedRange][ 67.5 78.0 ]>
-		<[tmvector2d][FlapAirspeedRange][ 25.0 43.5 ]>
+		<[vector2_float64][NormalAirspeedRange][ 25.0 67.5 ]>
+		<[vector2_float64][CautionAirspeedRange][ 67.5 78.0 ]>
+		<[vector2_float64][FlapAirspeedRange][ 25.0 43.5 ]>
         <[float64][MaximumAltitude][4800]>
         <[float64][CruiseAltitude][4000]>
         <[float64][MaximumTakeoffMass][818.9]>
         <[float64][EnginePower][134225.8]>
         <[float64][MaximumRange][300000.0]>
-        <[uint][UnitsBuilt][1300]>
-        <[uint][EngineCount][1]>
-        <[uint][Year][1972]>
-        <[tmvector2d][FlapSettings][ (0.0 0.0) (0.5 0.13962) (1.0 0.5236) ]>
+        <[uint32][UnitsBuilt][1300]>
+        <[uint32][EngineCount][1]>
+        <[uint32][Year][1972]>
+        <[list_vector2_float64][FlapSettings][ (0.0 0.0) (0.5 0.13962) (1.0 0.5236) ]>
         <[string8][FlapQualifier][]>
         <[string8][Tags][ airplane piston general_aviation gear trainer flaps ]>
 		<[string8][Pilot][pilot_daniel]>

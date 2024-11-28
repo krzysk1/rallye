@@ -9,11 +9,11 @@ This is free add-on for AeroflyFS4 created by Krzysztof Kaniewski, 2019, 2022
 
 # Installation
 
-1. Unzip file and move the folder "ms893" into the C:\Users\~\Documents\Aerofly FS 4\aircraft folder.
+1. Unzip file and move the folder "rallye" into the C:\Users\~\Documents\Aerofly FS 4\aircraft folder.
 
 # Uninstall
 
-1. Delete the folder "ms893".
+1. Delete the folder "rallye".
 
 # Resources
 
