@@ -29,12 +29,12 @@
                 <[tmvector3d][Direction][0.9920 0.0 -0.1259]>
                 <[bool][InCockpit][true]>
             >
-            <[camera][CameraCoPilot][]
+            <[camera_head][CameraCoPilot][]
+                <[string8][Tags][cockpit copilot right]>			
                 <[string8][Body][Fuselage]>
-                <[tmvector3d][R0][ -0.072 -0.253 0.675]>
-                <[tmvector3d][Direction][ 1.0 0.0 -0.1 ]>
+                <[tmvector3d][R0][-0.072 -0.253 0.675]>
+                <[tmvector3d][Direction][0.9920 0.0 -0.1259]>
                 <[bool][InCockpit][true]>
-                <[string8][Tags][cockpit copilot right]>
             >
             <[camera][CameraRearSeat][]
                 <[string8][Body][Fuselage]>

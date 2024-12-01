@@ -50,7 +50,7 @@
                 <[vector3_float64][R0][0.4391 0.3825 0.4391]>
                 <[matrix3_float64][B0][ 0.0 0.0 1.0  0.0 1.0 0.0  -1.0 0.0 0.0 ]>
                 <[string8][InputTransform][LeftYokeTransform.Output]>
-                <[vector3_float64][Direction2][ 0.0 0.0 -1.0 ]>
+                <[vector3_float64][Direction2][ 0.0 0.0 1.0 ]>
                 <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
                 <[float64][StepDistance][0.00005]>
                 <[control_message][OnStep][]
@@ -71,7 +71,7 @@
                 <[vector3_float64][R0][0.4391 0.118 0.4391]>
                 <[matrix3_float64][B0][ 0.0 0.0 1.0  0.0 1.0 0.0  -1.0 0.0 0.0 ]>
                 <[string8][InputTransform][LeftYokeTransform.Output]>
-                <[vector3_float64][Direction2][ 0.0 0.0 1.0 ]>
+                <[vector3_float64][Direction2][ 0.0 0.0 -1.0 ]>
                 <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
                 <[float64][StepDistance][0.00005]>
                 <[control_message][OnStep][]
