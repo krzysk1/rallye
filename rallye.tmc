@@ -19,26 +19,25 @@
                 <[string8][Text][SOCATA Rallye był lekkim samolotem produkowanym we Francji przez firmę SOCATA, począwszy od lat 60-tych. Pierwotnie był produkowany przez Morane-Saulnier jako MS.880. Ostatecznie został zastąpiony w produkcji przez serię Socata TB w latach 80-tych, ale kontynuował produkcję w Polsce na licencji PZL jako PZL Koliber. Przerobiony z FlightGear przez Krzysztofa Kaniewskiego. Model 3D autorstwa Patrice Poly (3D, FDM), Beber (dźwięki).]>
 			>
         >
-		<[float64][WingSpan][9.6]>
-		<[float64][MaximumAirspeed][78.0]>
-		<[float64][MaximumSpeed][78.0]>
-		<[float64][MinimumAirspeed][25.0]>
-        <[float64][ApproachAirspeed][25.0]>
-        <[float64][CruiseAirspeed][67.5]>
-        <[float64][CruiseSpeed][87.5]>
-		<[vector2_float64][NormalAirspeedRange][ 25.0 67.5 ]>
-		<[vector2_float64][CautionAirspeedRange][ 67.5 78.0 ]>
-		<[vector2_float64][FlapAirspeedRange][ 25.0 43.5 ]>
-        <[float64][MaximumAltitude][4800]>
-        <[float64][CruiseAltitude][4000]>
-        <[float64][MaximumTakeoffMass][818.9]>
-        <[float64][EnginePower][134225.8]>
-        <[float64][MaximumRange][300000.0]>
-        <[uint32][UnitsBuilt][1300]>
-        <[uint32][EngineCount][1]>
-        <[uint32][Year][1972]>
-        <[list_vector2_float64][FlapSettings][ (0.0 0.0) (0.5 0.13962) (1.0 0.5236) ]>
-        <[string8][FlapQualifier][]>
+        <[float64][MaximumTakeoffMass][1050.0]>		
+		<[float64][WingSpan]          [9.6]>
+        <[uint32] [Year]              [1972]>			
+        <[uint32] [UnitsBuilt]        [1300]>
+        <[uint32] [EngineCount]       [1]>
+        <[float64][EnginePower]       [134225.8]>
+		<[float64][MaximumAirspeed]   [78.0]>
+		<[float64][MaximumSpeed]      [78.0]>
+		<[float64][MinimumAirspeed]   [25.0]>
+        <[float64][ApproachAirspeed]  [25.0]>
+        <[float64][CruiseAirspeed]    [67.5]>
+        <[float64][CruiseSpeed]       [87.5]>
+        <[float64][MaximumAltitude]   [4800]>
+        <[float64][CruiseAltitude]    [4000]>
+        <[float64][MaximumRange]      [300000.0]>
+		<[vector2_float64][FlapAirspeedRange]   [ 25.0 43.5 ]>
+		<[vector2_float64][NormalAirspeedRange] [ 25.0 56.5 ]>
+		<[vector2_float64][CautionAirspeedRange][ 56.5 78.0 ]>
+        <[list_vector2_float64][FlapSettings][ (0.0 0.0) (0.5 0.1396) (1.0 0.5236) ]>
         <[string8][Tags][ airplane piston general_aviation gear trainer flaps ]>
 		<[string8][Pilot][pilot_daniel]>
     >

@@ -1,61 +1,67 @@
 <[file][][]
     <[hints][][]
         // rallye-MS893
-        <[float64][MaximumTakeOffMass][570.2]>
-        <[float64][WingSpan][9.61]>
-        <[float64][WingArea][12.6]>
+		// Single-engine, all-metal, four seats, low-wing airplane, conventional tail, fixed tricycle landing gear 
+		
+		// VNE (Never exceed speed): 290 km/h (156 KIAS)
+		// VD (Design Diving Speed): 322 km/h (174 KIAS)
+		// VNO (Maximum structural cruising speed):  250 km/h (135 KIAS 
+		// VA (Design Manoeuvring Speed): 210 km/h (113 KIAS) 
+		// VFE (Flap Extended Speed): 162 km/h (87 KIAS)
+		
+		// Datum Front face of engine firewall   = 1.0445
+		// Forward limit: 0.780 m (30.71 in.) aft of datum under 685 kg (1510 lbs
+		// Intermediate limit  0.943 m (37.13 in.) aft of datum at 1000 kg (2204 lbs) 
+						 // 0.969 m (38.15 in.) aft of datum at 1050 kg (2314 lbs)
+		// Aft limit 1.047 m (41.22 in.) aft of datum
+		// engine 117 kg (O-360-A1A)  180 HP-135 Kw 
+
+		
+        <[float64][MaximumTakeOffMass][1050.0]>
+        <[float64][WingSpan][9.6]>
+        <[float64][WingArea][12.28]>
         <[float64][HeightOffset][-0.788]>
         <[float64][NoseWheelPositionX][1.472]>
-        <[float64][ApproachSpeed][46.3]>
-        <[float64][PatternSpeed][61.7]>
-        <[float64][InitialClimbSpeed][51.4]>
+        <[float64][ApproachSpeed][29.7]> 
+        <[float64][PatternSpeed][32.4]>
+        <[float64][InitialClimbSpeed][27.0]>
         <[copilot_flap_info_list][FlapInfo][]
            <[copilot_flap_info][FlapUp][]
               <[float64][FlapPosition][0.0]>
-              <[float64][MinimumSpeed][43.7]>
-              <[float64][OptimumSpeed][61.73]>
-              <[float64][MaximumSpeed][115.7]>
+              <[float64][MinimumSpeed][26.5]>
+              <[float64][OptimumSpeed][33.4]>
+              <[float64][MaximumSpeed][78.0]>
               <[bool][TakeOff][true]>
               <[bool][Landing][true]>
-	             <[bool][AirBrake][true]>
            >
            <[copilot_flap_info][FlapApproach][]
               <[float64][FlapPosition][0.5]>
-              <[float64][MinimumSpeed][40.0]>
-              <[float64][OptimumSpeed][51.4]>
-              <[float64][MaximumSpeed][62.7]>
+              <[float64][MinimumSpeed][25.8]>
+              <[float64][OptimumSpeed][32.4]>
+              <[float64][MaximumSpeed][43.5]>
               <[bool][TakeOff][true]>
               <[bool][Landing][true]>
-	             <[bool][AirBrake][true]>
            >
            <[copilot_flap_info][FlapFull][]
               <[float64][FlapPosition][1.0]>
-              <[float64][MinimumSpeed][38.5]>
-              <[float64][OptimumSpeed][46.29]>
-              <[float64][MaximumSpeed][62.7]>
+              <[float64][MinimumSpeed][24.2]>
+              <[float64][OptimumSpeed][29.7]>
+              <[float64][MaximumSpeed][43.5]>
               <[bool][Landing][true]>
-	             <[bool][AirBrake][true]>
            >
         >
-        <[string8][AutoPilotType][BASIC]>
         <[int][EngineCount][1]>
         <[bool][Piston][true]>
         <[bool][GeneralAviation][true]>
         <[bool][ParkingBrake][true]>
-        <[string8][AutoThrottleType][MOVING]>
-        <[float64][ThrottleTrimFactor][0.5]>
-        <[float64][ElevatorGain][0.4]>
-        <[float64][AileronGain][0.4]>
-        <[float64][NormalBank][0.523598771542]>
-        <[float64][MaximumBank][0.872664619237]>
-        <[float64][MaximumRollRate][0.5]>
         <[bool][RudderTrimRequired][true]>
+        <[float64][ElevatorGain][0.15]>
+        <[float64][RudderGain][0.5]>
         <[float64][RudderSteeringGain][0.5]>
         <[float64][RudderCrossWind][1.5]>
-        <[float64][YawTrimFactor][0.1]>
-        <[float64][FlareHeightScaling][0.5]>
-        <[float64][FlareExpectedNoseDrop][0.1]>
-        <[float64][GainSideSlipRoll][2.0]>
+        <[float64][FlareHeightScaling][0.7]>
+        <[float64][FlareExpectedNoseDrop][0.2]>
+        <[float64][GainSideSlipRoll][3.5]>
         <[float64][StarterMaximumTime][3.0]>
     >
 >
