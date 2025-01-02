@@ -262,7 +262,7 @@
                 <[float64][Inflation][180000.0]> //1.8 bars (26.11 psi)
                 <[string8][Body][LeftGear]>
                 <[tmvector3d][R0][-0.1308 0.923 -0.6278]>
-                <[string8][InputBrake][LeftBrakeInput.Output]>
+                <[string8][InputBrake][LeftBrakeMix.Output]>
                 <[float64][BrakeStrength][0.6]>
             >
             <[output][GroundRollSpeedLeftWheel][]
@@ -280,7 +280,7 @@
                 <[float64][Inflation][468843.68]>
                 <[string8][Body][RightGear]>
                 <[tmvector3d][R0][-0.1308 -0.923 -0.6278]>
-                <[string8][InputBrake][RightBrakeInput.Output]>
+                <[string8][InputBrake][RightBrakeMix.Output]>
                 <[float64][BrakeStrength][0.6]>
             >
             <[output][GroundRollSpeedRightWheel][]
@@ -386,7 +386,7 @@
                 <[float64array][StationLE]          [  0.859  0.859  0.859  0.859  0.859  0.859 ]>
                 <[float64array][StationTE]          [ -0.487 -0.487 -0.487 -0.487 -0.487 -0.487 ]>
                 <[float64array][StationZ]           [ -0.097 -0.044  0.203  0.237  0.381  0.433 ]>
-                <[float64array][StationIncidence]   [  0.0  0.0  0.0  0.0  0.0  0.0 ]>
+                <[float64array][StationIncidence]   [  0.000  0.000  0.000  0.000  0.000  0.000 ]>
                 <[uint32array][StationFlap]         [  0      2      1      1      0      0     ]>
                 <[float64array][StationFlapFraction][  0.0    0.35   0.4    0.4    0.0    0.0   ]>
                 <[float64][AspectRatioMultiplier]   [2.0]>
@@ -411,7 +411,7 @@
                 <[float64array][StationLE]          [  0.859  0.859  0.859  0.859  0.859  0.859 ]>
                 <[float64array][StationTE]          [ -0.487 -0.487 -0.487 -0.487 -0.487 -0.487 ]>
                 <[float64array][StationZ]           [  0.433  0.381  0.237  0.203 -0.044 -0.097 ]>
-                <[float64array][StationIncidence]   [  0.0  0.0  0.0  0.0  0.0  0.0 ]>
+                <[float64array][StationIncidence]   [  0.000  0.000  0.000  0.000  0.000  0.000 ]>
                 <[uint32array][StationFlap]         [  0      1      1      2      0      0     ]>
                 <[float64array][StationFlapFraction][  0.0    0.4    0.4    0.35   0.0    0.0   ]>
                 <[float64][AspectRatioMultiplier]   [2.0]>
@@ -534,15 +534,20 @@
                 <[float64][Value][1.0]>
                 <[string8][Message][Controls.Mixture1]>
             >
-            <[input_default][BrakeInput][]
-                <[string8][Message][Controls.WheelBrake]>
-            >
+
             <[input_default][LeftBrakeInput][]
                 <[string8][Message][Controls.WheelBrake.Left]>
             >
             <[input_default][RightBrakeInput][]
                 <[string8][Message][Controls.WheelBrake.Right]>
             >
+            <[input_lever][ParkingBrakeInput][]
+                <[string8][Message][Controls.ParkingBrake]>
+            >
+            <[sender][SenderParkingBrake][]
+                <[string8][Input][ParkingBrakeInput.Output]>
+                <[string8][Message][Aircraft.ParkingBrake]>
+            >			
             <[input_default][HookInput][]
                 <[string8][Message][Controls.HookRelease]>
             >
@@ -736,15 +741,23 @@
             <[output_free][ServoMixtureOutput][]
                 <[string8][Input][ServoMixture.Output]>
             >
-            <[servoclassic][ServoBrake][]
-                <[string8][Input][BrakeInput.Output]>
-                <[float64][Speed][1.0]>
+            <[servoclassic][ParkingBrake][]
+                <[string8][Input][ParkingBrakeInput.Output]>
+                <[float64][Speed][3.0]>
                 <[float64][P0][0.0]>
                 <[float64][P1][1.0]>
+                <[float64][Position][0.0]>
             >
-            <[output_free][ServoBrakeOutput][]
-                <[string8][Input][ServoBrake.Output]>
+            <[output_free][ParkingBrakeOutput][]
+                <[string8][Input][ParkingBrake.Output]>
             >
+            <[maximum][LeftBrakeMix][]
+                <[string8][Inputs][ LeftBrakeInput.Output ParkingBrake.Output ]>
+            >
+            <[maximum][RightBrakeMix][]
+                <[string8][Inputs][ RightBrakeInput.Output ParkingBrake.Output ]>
+            >			
+
             <[servoclassic][ServoLeftAileron][]
                 <[string8][Input][AileronTrimmed.Output]>
                 <[float64][Speed][5]>
@@ -1747,7 +1760,7 @@
                 <[string8][GeometryList][ ParkContr ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
-                <[uint32][InputID][ServoEngineWork.Output]>
+                <[uint32][InputID][ParkingBrake.Output]>
                 <[float64][Scaling][1.570796]>
                 <[tmvector3d][Axis][ 0.981625 0.0 0.19082 ]>
                 <[tmvector3d][Pivot][0.588079 0.247684 0.280077]>

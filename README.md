@@ -21,3 +21,5 @@ This is free add-on for AeroflyFS4 created by Krzysztof Kaniewski, 2019, 2022
 All resources are available here: https://github.com/FGMEMBERS/rallye-MS893
 
 Aircraft Technical Data & Specifications http://www.airliners.net/aircraft-data/socata-rallye/365
+
+https://www.euroga.org/forums/aircraft/7180-morane-saulnier-rallye-series-morane-pilot-thread
