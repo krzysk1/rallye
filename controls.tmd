@@ -1,9 +1,9 @@
 <[file][][]
     <[modelmanager][][]
         <[pointer_list_tmcontrol][ControlObjects][]
-		
+
 			// barometer setting
-            <[control_cylinder][PressureSetting][7]
+            <[control_cylinder][PressureSetting][]
                 <[string8][Type][knob]>
                 <[vector3_float64][R0][0.5682 0.1862 0.5005]>
                 <[matrix3_float64][B0][ 1.0 0.0 0.0  0.0 1.0 0.0  0.0 0.0 1.0 ]>
@@ -45,7 +45,7 @@
                 <[tmvector3d][Pivot][0.60988 0.25055 0.378627]>
                 <[string8][InputTransform][LeftYokeHiddenTranslation.Output]>
             >
-            <[control_cylinder][LeftYokeLeftGrip][3]
+            <[control_cylinder][LeftYokeLeftGrip][]
                 <[string8][Type][stick]>
                 <[vector3_float64][R0][0.4391 0.3825 0.4391]>
                 <[matrix3_float64][B0][ 0.0 0.0 1.0  0.0 1.0 0.0  -1.0 0.0 0.0 ]>
@@ -63,10 +63,10 @@
                     <[string8][Qualifiers][step]>
                     <[float64][Value][7.0]>
                 >
-                <[float64][Radius][0.02]>
+                <[float64][Radius][0.015]>
                 <[float64][Length][0.09]>
             >
-            <[control_cylinder][LeftYokeRightGrip][3]
+            <[control_cylinder][LeftYokeRightGrip][]
                 <[string8][Type][stick]>
                 <[vector3_float64][R0][0.4391 0.118 0.4391]>
                 <[matrix3_float64][B0][ 0.0 0.0 1.0  0.0 1.0 0.0  -1.0 0.0 0.0 ]>
@@ -84,10 +84,10 @@
                     <[string8][Qualifiers][step]>
                     <[float64][Value][7.0]>
                 >
-                <[float64][Radius][0.02]>
+                <[float64][Radius][0.015]>
                 <[float64][Length][0.09]>
             >
-            <[control_cylinder][YokeHideLeft][22]
+            <[control_cylinder][YokeHideLeft][]
                 <[string8][Type][button]>
                 <[vector3_float64][R0][	0.52 0.2529 0.3766 ]>
                 <[matrix3_float64][B0][ 1.0 0.0 0.0  0.0 1.0 0.0  0.0 0.0 1.0 ]>
@@ -116,7 +116,7 @@
                 <[tmvector3d][Pivot][0.579953 -0.252888 0.376535]>
                 <[string8][InputTransform][RightYokeHiddenTranslation.Output]>
             >
-            <[control_cylinder][RightYokeLeftGrip][3]
+            <[control_cylinder][RightYokeLeftGrip][]
                 <[string8][Type][stick]>
                 <[vector3_float64][R0][0.4391 -0.118 0.4391]>
                 <[matrix3_float64][B0][ 0.0 0.0 1.0  0.0 1.0 0.0  -1.0 0.0 0.0 ]>
@@ -134,10 +134,10 @@
                     <[string8][Qualifiers][step]>
                     <[float64][Value][7.0]>
                 >
-                <[float64][Radius][0.02]>
+                <[float64][Radius][0.015]>
                 <[float64][Length][0.09]>
             >
-            <[control_cylinder][RightYokeRighttGrip][3]
+            <[control_cylinder][RightYokeRighttGrip][]
                 <[string8][Type][stick]>
                 <[vector3_float64][R0][0.4391 -0.3825 0.4391]>
                 <[matrix3_float64][B0][ 0.0 0.0 1.0  0.0 1.0 0.0  -1.0 0.0 0.0 ]>
@@ -155,10 +155,10 @@
                     <[string8][Qualifiers][step]>
                     <[float64][Value][7.0]>
                 >
-                <[float64][Radius][0.02]>
+                <[float64][Radius][0.015]>
                 <[float64][Length][0.09]>
             >
-            <[control_cylinder][YokeHideRight][22]
+            <[control_cylinder][YokeHideRight][]
                 <[string8][Type][button]>
                 <[vector3_float64][R0][0.52 -0.2529 0.3766]>
                 <[matrix3_float64][B0][ 1.0 0.0 0.0  0.0 1.0 0.0  0.0 0.0 1.0 ]>
@@ -200,14 +200,14 @@
             <[control_input][MixtureLeverInput][]
                 <[uint32][InputID][ServoMixture.Output]>
                 <[float64][Scaling][-1.745329]>
-                <[float64][Offset][0.785398]>					
+                <[float64][Offset][0.785398]>
             >
             <[control_rotation][MixtureLeverTransform][]
                 <[string8][Input][MixtureLeverInput.Output]>
                 <[tmvector3d][Axis][0 -1 0]>
                 <[tmvector3d][Pivot][0.540166 -0.030452 0.21471]>
-            >			
-            <[control_cylinder][MixtureLever][2]
+            >
+            <[control_cylinder][MixtureLever][]
                 <[string8][Type][lever]>
                 <[vector3_float64][R0][ 0.5413 -0.07098 0.2448 ]>
                 <[matrix3_float64][B0][ 0.0 1.0 0.0  -1.0 0.0 0.0  0.0 0.0 1.0 ]>
@@ -219,10 +219,34 @@
                     <[string8][Qualifiers][step]>
                     <[float64][Value][0.01]>
                 >
-                <[float64][Radius][0.01]>
-                <[float64][Length][0.015]>
+                <[float64][Radius][0.01195]>
+                <[float64][Length][0.006]>
             >
-			
+			// propeller speed lever
+            <[control_input][PropellerSpeedInput][]
+                <[uint32][InputID][PropellerSpeed.Output]>
+                <[float64][Scaling][-1.745329]>
+                <[float64][Offset][0.785398]>
+            >
+            <[control_rotation][PropellerSpeedTransform][]
+                <[string8][Input][PropellerSpeedInput.Output]>
+                <[tmvector3d][Axis][0 -1 0]>
+                <[tmvector3d][Pivot][0.540166 -0.030452 0.21471]>
+            >
+            <[control_sphere][PropellerSpeedLever][]
+                <[string8][Type][lever]>
+                <[vector3_float64][R0][ 0.5401 -0.003164 0.2743 ]>
+                <[matrix3_float64][B0][ 0.0 1.0 0.0  -1.0 0.0 0.0  0.0 0.0 1.0 ]>
+                <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
+                <[float64][StepDistance][0.000035]>
+                <[string8][InputTransform][PropellerSpeedTransform.Output]>
+                <[control_message][OnStep][]
+                <[string8][Message][Controls.PropellerSpeed1]>
+                    <[string8][Qualifiers][step]>
+                    <[float64][Value][0.01]>
+                >
+                <[float64][Radius][0.008725]>
+            >
         >
     >
 >
