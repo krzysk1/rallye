@@ -15,6 +15,18 @@
                 <[string8][Text][Die viersitzige einmotorige Morane-Saulnier Rallye ist ein Kleinflugzeug. Der freitragende Ganzmetall-Tiefdecker wird vor allem als Schleppflugzeug für Schleppbanner und Segelflugzeuge eingesetzt. Konvertiert von FlightGear durch Krzysztof Kaniewski. 3d-Modell erstellt von Patrice Poly (3D, FDM), Beber (Sounds).]>
 			>
             <[localized_text][element][2]
+                <[string8u][Language][fr]>
+                <[string8][Text][Le SOCATA Rallye était un avion léger fabriqué en France par SOCATA à partir des années 1960. Il a été initialement conçu par Morane-Saulnier sous le nom de MS.880. Il a finalement été remplacé dans la production par la série Socata TB dans les années 1980, mais a continué à être produit en Pologne sous licence par PZL sous le nom de PZL Koliber. Converti à partir de FlightGear par Krzysztof Kaniewski. Modèle 3D par Patrice Poly (3D, FDM), Beber (sons).]>
+			>
+            <[localized_text][element][3]
+                <[string8u][Language][es]>
+                <[string8][Text][El SOCATA Rallye era un avión ligero fabricado en Francia por SOCATA a partir de la década de 1960. Originalmente fue diseñado por Morane-Saulnier como el MS.880. Finalmente fue sustituido en la producción por la serie Socata TB en la década de 1980, pero continuó fabricándose en Polonia bajo licencia de PZL como el PZL Koliber. Convertido desde FlightGear por Krzysztof Kaniewski. Modelo 3D de Patrice Poly (3D, FDM) y Beber (sonidos).]>
+			>
+            <[localized_text][element][4]
+                <[string8u][Language][it]>
+                <[string8][Text][Il SOCATA Rallye era un velivolo leggero prodotto in Francia dalla SOCATA a partire dagli anni '60. Originariamente era stato progettato dalla Morane-Saulnier con il nome MS.880. Negli anni '80 è stato sostituito nella produzione dalla serie Socata TB, ma ha continuato ad essere prodotto in Polonia su licenza dalla PZL con il nome PZL Koliber. Convertito da FlightGear da Krzysztof Kaniewski. Modello 3D di Patrice Poly (3D, FDM), Beber (suoni).]>
+			>
+            <[localized_text][element][5]
                 <[string8u][Language][pl]>
                 <[string8][Text][SOCATA Rallye był lekkim samolotem produkowanym we Francji przez firmę SOCATA, począwszy od lat 60-tych. Pierwotnie był produkowany przez Morane-Saulnier jako MS.880. Ostatecznie został zastąpiony w produkcji przez serię Socata TB w latach 80-tych, ale kontynuował produkcję w Polsce na licencji PZL jako PZL Koliber. Przerobiony z FlightGear przez Krzysztofa Kaniewskiego. Model 3D autorstwa Patrice Poly (3D, FDM), Beber (dźwięki).]>
 			>
