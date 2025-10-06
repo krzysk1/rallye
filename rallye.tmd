@@ -28,7 +28,7 @@
                 <[tmvector3d][Direction][0.9920 0.0 -0.1259]>
                 <[bool][InCockpit][true]>
             >
-            <[camera_head][CameraCoPilot][]
+            <[camera_head][CameraCopilot][]
                 <[string8][Tags][cockpit copilot right]>
                 <[string8][Body][Fuselage]>
                 <[tmvector3d][R0][0.05 -0.253 0.7]>
@@ -47,7 +47,7 @@
                 <[tmvector3d][R0][ 0.8 8.0 0.9 ]>
                 <[tmvector3d][Direction][ -0.3 -0.999 0.0 ]>
                 <[bool][InCockpit][false]>
-                <[string8][Tags][left wing]>
+                <[string8][Tags][fuselage wing left]>
             >
 
             // Rigidbodies mass: 821.0  cm=(0.318 0.000 0.216)
@@ -2547,7 +2547,7 @@
                 <[string8][GeometryList][ PilotBody PilotHead ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
-                <[uint32][ShowInside][CameraCoPilot CameraRearSeat]>
+                <[uint32][ShowInside][CameraCopilot CameraRearSeat]>
                 <[bone_array][Bones][]
                  <[bone][element][0]
                      <[string8][Name][Bip01]>
