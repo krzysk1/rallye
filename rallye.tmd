@@ -128,7 +128,7 @@
                 <[tmvector3d][R0][ 1.516 0 0.389 ]>
                 <[uint32][Type][1]>
             >
-			
+
 			// fuel 80/87 minimum aviation grade gasoline at Station + 1.067 m (41.01 in.) 
 			// Total capacity  180 litres (47.55 US Gal): Each tank: 90 litres (23.76 US Gal) 
 			// Total usable capacity 178 litres (47.02 US Gal): Each tank: 89 litres (23.51 US Gal)
@@ -169,14 +169,14 @@
             >
 			// oil at Station - 0.493 m (19.41 in.) 
 			// Maximum capacity 7.5 litres (7.93 qts)
-			
+
 			// payload
-			
+
 			// Minimum Flight Crew1 (Pilot) at Station + 0.947 m (37.28 in.)
 			// One at front R.H. Station + 0.947 m (37.28 in.)
 			// Two at rear Station + 1.777 m (69.96 in.) provided a total maximum weight of 154 kg (339 lbs) 
 			// Baggage/ Cargo Compartments			45 kg (99 lbs) at Station + 2.447 m (96 in.) 
-			
+
             // Gears
 
             <[rigidbody][FrontGear][]
@@ -547,7 +547,7 @@
             <[sender][SenderParkingBrake][]
                 <[string8][Input][ParkingBrakeInput.Output]>
                 <[string8][Message][Aircraft.ParkingBrake]>
-            >			
+            >
             <[input_default][HookInput][]
                 <[string8][Message][Controls.HookRelease]>
             >
@@ -756,7 +756,7 @@
             >
             <[maximum][RightBrakeMix][]
                 <[string8][Inputs][ RightBrakeInput.Output ParkingBrake.Output ]>
-            >			
+            >
 
             <[servoclassic][ServoLeftAileron][]
                 <[string8][Input][AileronTrimmed.Output]>
@@ -902,7 +902,7 @@
             <[output_free][ServoSlatsOutput][]
                 <[string8][Input][ServoSlats.Output]>
             >
-			
+
             // Propulsion
 
             <[rigidbody][PropellerBody][]
@@ -914,7 +914,7 @@
             <[multibody_joint][PropellerJoint][]
                 <[string8][Body0][EngineBody]>
                 <[string8][Body1][PropellerBody]>
-                <[tmvector3d][X0][ 1.0 0.0 0.0]>				
+                <[tmvector3d][X0][ 1.0 0.0 0.0]>
                 <[tmvector3d][R0][2.04 0 0.414]>
                 <[float64][Kp][0.0]>
                 <[float64][Kd][0.0]>
@@ -941,7 +941,7 @@
                 <[string8][Body][PropellerBody]>
                 <[string8][Airfoil][AirfoilPropeller]>
                 <[string8][EngineRotationSpeed][DriveShaft.RotationSpeed]>
-                <[string8][DamageOnCrash]      [Engine.Damage]>		
+                <[string8][DamageOnCrash]      [Engine.Damage]>
                 <[tmvector3d][R0][2.04 0 0.414]>
                 <[tmvector3d][X0][1.0 0.0 0.0]>
                 <[tmvector3d][Y0][0.0 1.0 0.0]>
@@ -4843,7 +4843,7 @@
                 <[string8][InputTrigger][ButtonSound.Output]>
                 <[string8][InputVolume][0.6]>
                 <[string8][InputPitch][1.0]>
-                <[string8][SoundFile][avionics.wav]>
+                <[string8][SoundFile][click.wav]>
                 <[bool][External][false]>
             >
             <[soundinput][SwitchSound][]
@@ -4856,6 +4856,22 @@
                 <[string8][InputVolume][0.6]>
                 <[string8][InputPitch][1.5]>
                 <[string8][SoundFile][click.wav]>
+                <[bool][External][false]>
+            >
+			// avionics sound
+            <[soundinput][AvionicsOnInput][]
+                <[uint32][InputID][ServoEngineWork.Output]>
+            >
+            <[soundmapping][AvionicsVolume][]
+                <[string8][Input][AvionicsOnInput.Output]>
+                <[tmvector2d][Map][ (0.0 0.0) (1.0 0.2) ]>
+            >
+            <[soundloop][AvionicsLoopIntern][]
+                <[string8][InputVolume][AvionicsVolume.Output]>
+                <[string8][InputPitch][1.0]>
+                <[uint32][PositionID][Fuselage.R]>
+                <[uint32][VelocityID][Fuselage.V]>
+                <[string8][SoundFile][avionics.wav]>
                 <[bool][External][false]>
             >
         >
