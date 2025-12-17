@@ -1,12 +1,12 @@
 <[file][][]
 
-	//-------------------------------------
-	// Plane: Socata Rallye MS893E
-	// Converted from FlightGear by krzysk (at) wp.pl
-	// 3D model by Patrice Poly "WooT" (3D, FDM) Beber (Sounds)
-	// License	GPLv2+
-	// Date: Mar 2016 to Dec 2022; May 2023 (AFS4); Dec 2024
-	//-------------------------------------
+    //-------------------------------------
+    // Plane: Socata Rallye MS893E
+    // Converted from FlightGear by krzysk (at) wp.pl
+    // 3D model by Patrice Poly "WooT" (3D, FDM) Beber (Sounds)
+    // License    GPLv2+
+    // Date: Mar 2016 to Dec 2022; May 2023 (AFS4); Dec 2024; Dec 2025
+    //-------------------------------------
 
     <[modelmanager][][]
         <[pointer_list_tmuniverse][DynamicObjects][]
@@ -18,39 +18,66 @@
 
             <[camera][CameraFollow][]
                 <[string8][Body][Fuselage]>
-                <[tmvector3d][R0][ -8.09 0 2.272 ]>
-                <[tmvector3d][Direction][ 0.963 0 -0.27 ]>
+                <[tmvector3d][R0][ -11.0 0.0 2.3 ]>
+                <[tmvector3d][Direction][ 1.0 0.0 0.0 ]>
             >
             <[camera_head][CameraPilot][]
-                <[string8][Tags][cockpit pilot left]>
                 <[string8][Body][Fuselage]>
                 <[tmvector3d][R0][0.05 0.253 0.7]>
                 <[tmvector3d][Direction][0.9920 0.0 -0.1259]>
                 <[bool][InCockpit][true]>
+                <[string8][Tags][cockpit pilot left]>
             >
             <[camera_head][CameraCopilot][]
-                <[string8][Tags][cockpit copilot right]>
                 <[string8][Body][Fuselage]>
                 <[tmvector3d][R0][0.05 -0.253 0.7]>
                 <[tmvector3d][Direction][0.9920 0.0 -0.1259]>
                 <[bool][InCockpit][true]>
+                <[string8][Tags][cockpit copilot right]>
             >
             <[camera][CameraRearSeat][]
                 <[string8][Body][Fuselage]>
                 <[tmvector3d][R0][ -0.8 -0.15 0.62 ]>
                 <[tmvector3d][Direction][ 0.3 -0.8 -0.25 ]>
                 <[bool][InCockpit][true]>
-                <[string8][Tags][cabin window right wing]>
+                <[string8][Tags][cabin window wing right]>
             >
-            <[camera][CameraLeftWing][]
+            <[camera][CameraGearView][]
+                <[string8][Body][Fuselage]>
+                <[tmvector3d][R0][ -3.240127 1.194406 0.14 ]>
+                <[tmvector3d][Direction][ 1.0 0.0 -0.2 ]>
+                <[float64][Cone][-0.1]>
+                <[bool][InCockpit][false]>
+                <[string8][Tags][gear]>
+            >
+            <[camera][CameraStabilizer][]
+                <[string8][Body][Fuselage]>
+                <[tmvector3d][R0][ -4.097283 0.0 1.743507 ]>
+                <[tmvector3d][Direction][ 0.95 0.0 -0.1 ]>
+                <[float64][Cone][-0.1]>
+                <[bool][InCockpit][false]>
+                <[string8][Tags][tail stabilizer]>
+            >
+            <[camera][CameraLeftFuselageView][]
                 <[string8][Body][LeftWing]>
-                <[tmvector3d][R0][ 0.8 8.0 0.9 ]>
-                <[tmvector3d][Direction][ -0.3 -0.999 0.0 ]>
+                <[tmvector3d][R0][ 0.0 4.3 0.9 ]>
+                <[tmvector3d][X0][ 0.0 -1.0 0.0 ]>
+                <[tmvector3d][Direction][ 0.0 -1.0 -0.1 ]>
+                <[float64][Cone][0.0]>
                 <[bool][InCockpit][false]>
                 <[string8][Tags][fuselage wing left]>
             >
+            <[camera][CameraRightFuselageView][]
+                <[string8][Body][RightWing]>
+                <[tmvector3d][R0][ 0.0 -4.3 0.9 ]>
+                <[tmvector3d][X0][ 0.0 1.0 0.0 ]>
+                <[tmvector3d][Direction][ 0.0 1.0 -0.1 ]>
+                <[float64][Cone][0.0]>
+                <[bool][InCockpit][false]>
+                <[string8][Tags][fuselage wing right]>
+            >
 
-            // Rigidbodies mass: 821.0  cm=(0.318 0.000 0.216)
+            // Rigidbodies
 
             <[rigidbody][Fuselage][]
                 <[float64][Mass][370.2]>
@@ -129,53 +156,88 @@
                 <[uint32][Type][1]>
             >
 
-			// fuel 80/87 minimum aviation grade gasoline at Station + 1.067 m (41.01 in.) 
-			// Total capacity  180 litres (47.55 US Gal): Each tank: 90 litres (23.76 US Gal) 
-			// Total usable capacity 178 litres (47.02 US Gal): Each tank: 89 litres (23.51 US Gal)
-            <[rigidbody][FuelTank1Body][]
+            // fuel 80/87 minimum aviation grade gasoline at Station + 1.067 m (41.01 in.)
+            // Total capacity  180 litres (47.55 US Gal): Each tank: 90 litres (23.76 US Gal)
+            // Total usable capacity 178 litres (47.02 US Gal): Each tank: 89 litres (23.51 US Gal)
+
+            <[fuel_tank][LeftFuelTank][]
+                <[string8][Body][LeftWing]>
+                <[float64][Capacity][89.0]>
                 <[float64][Mass][65.8]>
-                <[tmvector3d][InertiaLength][0.43 0.43 0.16]>
-                <[tmvector3d][R0][0 1.668 0.118]>
-                <[tmmatrix3d][B0][1 0 0.0 0 0.992546 0.121869 0.0 -0.121869 0.992546]>
+                <[tmvector3d][Outlet0][ 0 1.368 -0.097 ]>
+                <[fuel_tank_stations][Stations][]
+                    <[fuel_tank_station][][]
+                        <[tmvector3d][R0][ 0 1.368 0.0 ]>
+                        <[tmvector3d][X0][ 1.0 0.0 0.0 ]>
+                        <[tmvector3d][Y0][ 0.0 -0.121869 0.992546 ]>
+                        <[tmvector3d][Dimensions][ 0.2 0.13 ]>
+                    >
+                    <[fuel_tank_station][][]
+                        <[tmvector3d][R0][ 0 1.968 0.118 ]>
+                        <[tmvector3d][X0][ 1.0 0.0 0.0 ]>
+                        <[tmvector3d][Y0][ 0.0 -0.121869 0.992546 ]>
+                        <[tmvector3d][Dimensions][ 0.2 0.13 ]>
+                    >
+                >
+                <[tmvector2d][MassMap][ ( 0.0 0.0 ) ( 131.6 65.8 ) ]>
             >
-            <[multibody_joint][JointLeftWingFuelTank1][]
-                <[string8][Body0][LeftWing]>
-                <[string8][Body1][FuelTank1Body]>
-                <[tmvector3d][X0][0.0 0.0 1.0]>
-                <[float64][Kp][660000]>
-                <[float64][Kd][13200]>
-                <[tmvector3d][R0][ 0 1.668 0.118 ]>
-                <[uint32][Type][1]>
-            >
-            <[rigidbody][FuelTank2Body][]
+            <[fuel_tank][RightFuelTank][]
+                <[string8][Body][RightWing]>
+                <[float64][Capacity][89.0]>
                 <[float64][Mass][65.8]>
-                <[tmvector3d][InertiaLength][0.43 0.43 0.16]>
-                <[tmvector3d][R0][0 -1.668 0.118]>
-                <[tmmatrix3d][B0][1 0 0.0 0 0.992546 -0.121869 0.0 0.121869 0.992546]>
+                <[tmvector3d][Outlet0][ 0 -1.368 -0.097 ]>
+                <[fuel_tank_stations][Stations][]
+                    <[fuel_tank_station][][]
+                        <[tmvector3d][R0][ 0 -1.368 0.0 ]>
+                        <[tmvector3d][X0][ 1.0 0.0 0.0 ]>
+                        <[tmvector3d][Y0][ 0.0 0.121869 0.992546 ]>
+                        <[tmvector3d][Dimensions][ 0.2 0.13 ]>
+                    >
+                    <[fuel_tank_station][][]
+                        <[tmvector3d][R0][ 0 -1.968 0.118 ]>
+                        <[tmvector3d][X0][ 1.0 0.0 0.0 ]>
+                        <[tmvector3d][Y0][ 0.0 0.121869 0.992546 ]>
+                        <[tmvector3d][Dimensions][ 0.2 0.13 ]>
+                    >
+                >
+                <[tmvector2d][MassMap][ ( 0.0 0.0 ) ( 131.6 65.8 ) ]>
             >
-            <[multibody_joint][JointRightWingFuelTank2][]
-                <[string8][Body0][RightWing]>
-                <[string8][Body1][FuelTank2Body]>
-                <[tmvector3d][X0][0.0 0.0 1.0]>
-                <[float64][Kp][660000]>
-                <[float64][Kd][13200]>
-                <[tmvector3d][R0][ 0 -1.668 0.118 ]>
-                <[uint32][Type][1]>
+            // oil at Station - 0.493 m (19.41 in.)
+            // Maximum capacity 7.5 litres (7.93 qts)
+
+            // payload
+
+            // Minimum Flight Crew1 (Pilot) at Station + 0.947 m (37.28 in.)
+            // One at front R.H. Station + 0.947 m (37.28 in.)
+            // Two at rear Station + 1.777 m (69.96 in.) provided a total maximum weight of 154 kg (339 lbs)
+
+            <[cargo][BaggageArea][]
+                <[float64][Mass][0.0]>
+                <[string8][Body][Fuselage]>
+                <[tmvector3d][InertiaLength][ 0.5 0.5 0.5 ]>
+                <[tmvector3d][R0][ -1.414 0.0 0.0]>  // at at Station + 2.447 
+                <[float64][MaximumMass][45.9]>
+            >
+            <[persons][PersonsFront][]
+                <[float64][Mass][70.0]>
+                <[string8][Body][Fuselage]>
+                <[tmvector3d][InertiaLength][ 0.5 0.5 0.5 ]>
+                <[tmvector3d][R0][ 0.770 0.0 0.0]>
+                <[float64][MinimumPersons][1.0]>
+                <[float64][MaximumPersons][2.0]>
+            >
+            <[persons][PersonsRear][]
+                <[float64][Mass][0.0]>
+                <[string8][Body][Fuselage]>
+                <[tmvector3d][InertiaLength][ 1.0 1.0 1.0 ]>
+                <[tmvector3d][R0][ -0.144 0.0 0.0 ]>
+                <[float64][MaximumPersons][2.0]>
             >
             <[hook][TowHook][]
                 <[string8][Body][Fuselage]>
                 <[tmvector3d][R0][-4.198 0 0.046]>
                 <[string8][ReleaseControl][HookInput.Output]>
             >
-			// oil at Station - 0.493 m (19.41 in.) 
-			// Maximum capacity 7.5 litres (7.93 qts)
-
-			// payload
-
-			// Minimum Flight Crew1 (Pilot) at Station + 0.947 m (37.28 in.)
-			// One at front R.H. Station + 0.947 m (37.28 in.)
-			// Two at rear Station + 1.777 m (69.96 in.) provided a total maximum weight of 154 kg (339 lbs) 
-			// Baggage/ Cargo Compartments			45 kg (99 lbs) at Station + 2.447 m (96 in.) 
 
             // Gears
 
@@ -217,7 +279,7 @@
                 <[string8][Body0][LeftWing]>
                 <[string8][Body1][LeftGear]>
                 <[tmvector3d][X0][ 0.0 0.0 1.0 ]>
-   				<[tmvector3d][R0][ -0.219 0.741 -0.018 ]>
+                   <[tmvector3d][R0][ -0.219 0.741 -0.018 ]>
                 <[float64][Kp][200000.0]>
                 <[float64][Kd][3500.0]>
                 <[uint32][Type][1]>
@@ -232,7 +294,7 @@
                 <[string8][Body0][RightWing]>
                 <[string8][Body1][RightGear]>
                 <[tmvector3d][X0][ 0.0 0.0 1.0 ]>
-   				<[tmvector3d][R0][ -0.219 -0.741 -0.018 ]>
+                   <[tmvector3d][R0][ -0.219 -0.741 -0.018 ]>
                 <[float64][Kp][200000.0]>
                 <[float64][Kd][3500.0]>
                 <[uint32][Type][1]>
@@ -243,7 +305,7 @@
                 <[float64][Radius][0.148]> //330 x 130
                 <[float64][Width][0.08956]>
                 <[float64][RimRadius][0.065]>
-                <[float64][Inflation][140000.0]> // 1.4 bars (20.31 psi) 
+                <[float64][Inflation][140000.0]> // 1.4 bars (20.31 psi)
                 <[string8][Body][FrontGear]>
                 <[tmvector3d][R0][1.477 -0.07424 -0.6525]>
             >
@@ -1009,7 +1071,7 @@
                 <[string8][Message][Aircraft.Power]>
             >
 
-			// magnetos
+            // magnetos
             <[input_discrete_momentary][Magnetos][]
                 <[string8][Message][Controls.Magnetos1]>
                 <[tmvector2d][Range][ 0.0 4.0 ]>
@@ -1856,16 +1918,16 @@
             <[graphics_linear_interpolation][asi-ms893_needle_2Mapping][]
                 <[string8][Input][asi-ms893_needle_2Input.Output]>
                 <[tmvector2d][Map][(0 0)
-								(40 0.261799)
-								(60 0.715585)
-								(80 1.32645)
-								(100 1.989675)
-								(120 2.617994)
-								(140 3.316126)
-								(160 3.944444)
-								(180 4.625123)
-								(200 5.270894)
-								(215 5.77704)]>
+                                (40 0.261799)
+                                (60 0.715585)
+                                (80 1.32645)
+                                (100 1.989675)
+                                (120 2.617994)
+                                (140 3.316126)
+                                (160 3.944444)
+                                (180 4.625123)
+                                (200 5.270894)
+                                (215 5.77704)]>
             >
             <[hingedbodygraphics][asi-ms893_needle_2][]
                 <[string8][GeometryList][ Needle ]> //needle01
@@ -1882,16 +1944,16 @@
             <[graphics_linear_interpolation][asi-ms893_needle_001_3Mapping][]
                 <[string8][Input][asi-ms893_needle_001_3Input.Output]>
                 <[tmvector2d][Map][(0 0)
-								(40 0.261799)
-								(60 0.715585)
-								(80 1.32645)
-								(100 1.989675)
-								(120 2.617994)
-								(140 3.316126)
-								(160 3.944444)
-								(180 4.625123)
-								(200 5.270894)
-								(215 5.77704)]>
+                                (40 0.261799)
+                                (60 0.715585)
+                                (80 1.32645)
+                                (100 1.989675)
+                                (120 2.617994)
+                                (140 3.316126)
+                                (160 3.944444)
+                                (180 4.625123)
+                                (200 5.270894)
+                                (215 5.77704)]>
             >
             <[hingedbodygraphics][asi-ms893_needle_001_3][]
                 <[string8][GeometryList][ Needle001 ]>
@@ -2000,7 +2062,7 @@
             >
             <[graphics_linear_interpolation][KI206_gsneedle_8Mapping][]
                 <[string8][Input][KI206_gsneedle_8Input.Output]>
-                <[tmvector2d][Map][	(-10.0 -0.0113) (0.0 0) (10.0 0.0113) ]>
+                <[tmvector2d][Map][    (-10.0 -0.0113) (0.0 0) (10.0 0.0113) ]>
             >
             <[movinggraphics][KI206_gsneedle_8][]
                 <[string8][GeometryList][ KI206GsNeedle ]>
@@ -2031,7 +2093,7 @@
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[uint32][InputID][RateOfTurn.Output]>
-				<[float64][Scaling][-0.8]>
+                <[float64][Scaling][-0.8]>
                 <[tmvector3d][Axis][ 0.997564 0.0 0.069756 ]>
                 <[tmvector3d][Pivot][0.577 0.318 0.451]>
             >
@@ -2067,14 +2129,14 @@
             <[graphics_linear_interpolation][vsi_Needle_2Mapping][]
                 <[string8][Input][vsi_Needle_2Input.Output]>
                 <[tmvector2d][Map][(-20.0 -3.028146)
-									(-15.0 -2.295108)
-									(-10.0 -1.422443)
-									(-5.0 -0.616101)
-									(0.0 0)
-									(5.0 0.623083)
-									(10.0 1.422443)
-									(15.0 2.286381)
-									(20.0 3.017674)]>
+                                    (-15.0 -2.295108)
+                                    (-10.0 -1.422443)
+                                    (-5.0 -0.616101)
+                                    (0.0 0)
+                                    (5.0 0.623083)
+                                    (10.0 1.422443)
+                                    (15.0 2.286381)
+                                    (20.0 3.017674)]>
             >
             <[hingedbodygraphics][vsi_Needle_2][]
                 <[string8][GeometryList][ VsiNeedle ]>
@@ -2169,14 +2231,14 @@
             <[graphics_linear_interpolation][tach_Needle_2Mapping][]
                 <[string8][Input][tach_Needle_2Input.Output]>
                 <[tmvector2d][Map][(0.0 -2.244493)
-								(0.1 -2.16159)
-								(500.0 -1.620538)
-								(1000.0 -0.996583)
-								(1500.0 -0.368264)
-								(2000.0 0.268781)
-								(2500.0 0.897099)
-								(3000.0 1.525418)
-								(3500.0 2.153736)]>
+                                (0.1 -2.16159)
+                                (500.0 -1.620538)
+                                (1000.0 -0.996583)
+                                (1500.0 -0.368264)
+                                (2000.0 0.268781)
+                                (2500.0 0.897099)
+                                (3000.0 1.525418)
+                                (3500.0 2.153736)]>
             >
             <[hingedbodygraphics][tach_Needle_2][]
                 <[string8][GeometryList][ TachNeedle ]>
@@ -2451,10 +2513,10 @@
             <[graphics_linear_interpolation][ms-893-fuel-oil_OilPressNeedle_5Mapping][]
                 <[string8][Input][ms-893-fuel-oil_OilPressNeedle_5Input.Output]>
                 <[tmvector2d][Map][ (0 -0.523599)
-									(25 -0.331613)
-									(60 0.05236)
-									(90 0.366519)
-									(120 0.523599)]>
+                                    (25 -0.331613)
+                                    (60 0.05236)
+                                    (90 0.366519)
+                                    (120 0.523599)]>
             >
             <[hingedbodygraphics][ms-893-fuel-oil_OilPressNeedle_5][]
                 <[string8][GeometryList][ OilPressNeedle ]>
@@ -2471,11 +2533,11 @@
             <[graphics_linear_interpolation][ms-893-fuel-oil_RightFuelNeedle_6Mapping][]
                 <[string8][Input][ms-893-fuel-oil_RightFuelNeedle_6Input.Output]>
                 <[tmvector2d][Map][ (0 -0.541052)
-									(5 -0.349066)
-									(10 -0.15708)
-									(15 0.034907)
-									(20 0.226893)
-									(24 0.453786)]>
+                                    (5 -0.349066)
+                                    (10 -0.15708)
+                                    (15 0.034907)
+                                    (20 0.226893)
+                                    (24 0.453786)]>
             >
             <[hingedbodygraphics][ms-893-fuel-oil_RightFuelNeedle_6][]
                 <[string8][GeometryList][ RightFuelNeedle ]>
@@ -4858,7 +4920,7 @@
                 <[string8][SoundFile][click.wav]>
                 <[bool][External][false]>
             >
-			// avionics sound
+            // avionics sound
             <[soundinput][AvionicsOnInput][]
                 <[uint32][InputID][ServoEngineWork.Output]>
             >

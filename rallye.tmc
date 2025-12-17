@@ -1,6 +1,6 @@
 <[file][][]
     <[modelinformation][][]
-        <[int32][Version][220]>
+        <[int32][Version][230]>
         <[list_vector4_float64][ContactSpheres][ (1.472 -0.075 -0.757 0.04) (-0.133 0.92 -0.788 0.04) (-0.133 -0.92 -0.788 0.04) ]>
         <[stringt8c][ICAO][RALL]>
         <[string8][DisplayName][Rallye MS.893E]>
@@ -13,44 +13,72 @@
             <[localized_text][element][1]
                 <[string8u][Language][de]>
                 <[string8][Text][Die viersitzige einmotorige Morane-Saulnier Rallye ist ein Kleinflugzeug. Der freitragende Ganzmetall-Tiefdecker wird vor allem als Schleppflugzeug für Schleppbanner und Segelflugzeuge eingesetzt. Konvertiert von FlightGear durch Krzysztof Kaniewski. 3d-Modell erstellt von Patrice Poly (3D, FDM), Beber (Sounds).]>
-			>
+            >
             <[localized_text][element][2]
                 <[string8u][Language][fr]>
                 <[string8][Text][Le SOCATA Rallye était un avion léger fabriqué en France par SOCATA à partir des années 1960. Il a été initialement conçu par Morane-Saulnier sous le nom de MS.880. Il a finalement été remplacé dans la production par la série Socata TB dans les années 1980, mais a continué à être produit en Pologne sous licence par PZL sous le nom de PZL Koliber. Converti à partir de FlightGear par Krzysztof Kaniewski. Modèle 3D par Patrice Poly (3D, FDM), Beber (sons).]>
-			>
+            >
             <[localized_text][element][3]
                 <[string8u][Language][es]>
                 <[string8][Text][El SOCATA Rallye era un avión ligero fabricado en Francia por SOCATA a partir de la década de 1960. Originalmente fue diseñado por Morane-Saulnier como el MS.880. Finalmente fue sustituido en la producción por la serie Socata TB en la década de 1980, pero continuó fabricándose en Polonia bajo licencia de PZL como el PZL Koliber. Convertido desde FlightGear por Krzysztof Kaniewski. Modelo 3D de Patrice Poly (3D, FDM) y Beber (sonidos).]>
-			>
+            >
             <[localized_text][element][4]
                 <[string8u][Language][it]>
                 <[string8][Text][Il SOCATA Rallye era un velivolo leggero prodotto in Francia dalla SOCATA a partire dagli anni '60. Originariamente era stato progettato dalla Morane-Saulnier con il nome MS.880. Negli anni '80 è stato sostituito nella produzione dalla serie Socata TB, ma ha continuato ad essere prodotto in Polonia su licenza dalla PZL con il nome PZL Koliber. Convertito da FlightGear da Krzysztof Kaniewski. Modello 3D di Patrice Poly (3D, FDM), Beber (suoni).]>
-			>
+            >
             <[localized_text][element][5]
                 <[string8u][Language][pl]>
                 <[string8][Text][SOCATA Rallye był lekkim samolotem produkowanym we Francji przez firmę SOCATA, począwszy od lat 60-tych. Pierwotnie był produkowany przez Morane-Saulnier jako MS.880. Ostatecznie został zastąpiony w produkcji przez serię Socata TB w latach 80-tych, ale kontynuował produkcję w Polsce na licencji PZL jako PZL Koliber. Przerobiony z FlightGear przez Krzysztofa Kaniewskiego. Model 3D autorstwa Patrice Poly (3D, FDM), Beber (dźwięki).]>
-			>
+            >
         >
-        <[float64][MaximumTakeoffMass][1050.0]>
-		<[float64][WingSpan]          [9.6]>
-        <[uint32] [Year]              [1972]>
-        <[uint32] [UnitsBuilt]        [1300]>
-        <[uint32] [EngineCount]       [1]>
-        <[float64][EnginePower]       [134225.8]>
-		<[float64][MaximumAirspeed]   [78.0]>
-		<[float64][MaximumSpeed]      [78.0]>
-		<[float64][MinimumAirspeed]   [25.0]>
-        <[float64][ApproachAirspeed]  [25.0]>
-        <[float64][CruiseAirspeed]    [67.5]>
-        <[float64][CruiseSpeed]       [87.5]>
-        <[float64][MaximumAltitude]   [4800]>
-        <[float64][CruiseAltitude]    [4000]>
-        <[float64][MaximumRange]      [300000.0]>
-		<[vector2_float64][FlapAirspeedRange]   [ 25.0 43.5 ]>
-		<[vector2_float64][NormalAirspeedRange] [ 25.0 56.5 ]>
-		<[vector2_float64][CautionAirspeedRange][ 56.5 78.0 ]>
+        <[float64][MaximumTaxiMass]      [1050.0]>
+        <[float64][MaximumTakeoffMass]   [1050.0]>
+        <[float64][MaximumLandingMass]   [1000.0]>
+        <[float64][MaximumZeroFuelMass]  [1050.0]>
+        <[float64][OperatingEmptyMass]   [615.0]> // 615 kg
+        <[float64][MaximumFuelMass]      [140.0]> // 220 l usable (235 l total)
+        <[float64][MaximumPayload]       [360.0]> // 4p + 45kg
+        <[uint32] [MaximumPersonsOnBoard][4]>
+        <[float64][WingSpan]             [9.74]>
+        <[float64][WingArea]             [12.28]>
+        <[float64][Length]               [7.18]>
+        <[float64][Height]               [2.8]>
+        <[float64][NoseWheelPosition]    [1.472]>
+        <[float64][MainGearWidth]        [2.01]>
+        <[uint32] [Year]                 [1972]>
+        <[uint32] [UnitsBuilt]           [1300]>
+        <[uint32] [EngineCount]          [1]>
+        <[float64][EnginePower]          [134225.8]> // Lycoming  engine 117 kg (O-360-A1A)  180 HP-135 Kw max 2700RPM
+        <[float64][MaximumAirspeed]      [78.0]>
+        <[float64][MaximumSpeed]         [78.0]>
+        <[float64][MinimumAirspeed]      [27.0]>
+        <[float64][ApproachAirspeed]     [32.5]>
+        <[float64][CruiseAirspeed]       [57.5]> 
+        <[float64][CruiseSpeed]          [67.5]>
+        <[float64][MaximumAltitude]      [3657.6]>
+        <[float64][CruiseAltitude]       [2438.0]>
+        <[float64][MaximumRange]         [1050000.0]>
+        <[float64][MaximumLoadRange]     [1050000.0]>
+        <[float64][MaximumFuelRange]     [1290000.0]>
+        <[float64][MaximumFerryRange]    [1350000.0]>
+        <[float64][MaximumGlideRatio]    [9.0]>
+        <[float64][TakeoffDistance]      [130.0]>
+        <[float64][LandingDistance]      [115.0]>
+        <[float64][FuelDensity]          [780.0]>
+        <[float64][MACLeadingEdge]       [0.859]>
+        <[float64][MACLength]            [1.3]>
+        <[float64][MACOptimumCG]         [0.25]>
+        <[vector2_float64][FlapAirspeedRange]   [ 25.0 43.0 ]>
+        <[vector2_float64][NormalAirspeedRange] [ 27.0 67.5 ]>
+        <[vector2_float64][CautionAirspeedRange][ 67.5 78.0 ]>
         <[list_vector2_float64][FlapSettings][ (0.0 0.0) (0.5 0.1396) (1.0 0.5236) ]>
         <[string8][Tags][ airplane piston general_aviation gear trainer flaps ]>
-		<[string8][Pilot][pilot_daniel]>
+        <[string8][Pilot][pilot_daniel]>
     >
 >
+
+	// Datum Front face of engine firewall   = 1.0445
+	// Forward limit: 0.780 m (30.71 in.) aft of datum under 685 kg (1510 lbs
+	// Intermediate limit  0.943 m (37.13 in.) aft of datum at 1000 kg (2204 lbs)
+					 // 0.969 m (38.15 in.) aft of datum at 1050 kg (2314 lbs)
+	// Aft limit 1.047 m (41.22 in.) aft of datum

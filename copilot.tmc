@@ -1,37 +1,24 @@
 <[file][][]
     <[hints][][]
-        // rallye-MS893
-		// Single-engine, all-metal, four seats, low-wing airplane, conventional tail, fixed tricycle landing gear 
-		
-		// VNE (Never exceed speed): 290 km/h (156 KIAS)
-		// VD (Design Diving Speed): 322 km/h (174 KIAS)
-		// VNO (Maximum structural cruising speed):  250 km/h (135 KIAS)
-		// VA (Design Manoeuvring Speed): 210 km/h (113 KIAS) 
-		// VFE (Flap Extended Speed): 162 km/h (87 KIAS)
-		
-		// Datum Front face of engine firewall   = 1.0445
-		// Forward limit: 0.780 m (30.71 in.) aft of datum under 685 kg (1510 lbs
-		// Intermediate limit  0.943 m (37.13 in.) aft of datum at 1000 kg (2204 lbs) 
-						 // 0.969 m (38.15 in.) aft of datum at 1050 kg (2314 lbs)
-		// Aft limit 1.047 m (41.22 in.) aft of datum
-		// engine 117 kg (O-360-A1A)  180 HP-135 Kw 
-
-		
-        <[float64][MaximumTakeOffMass][1050.0]>
-        <[float64][WingSpan][9.6]>
+        // Socata Rallye MS893E
+        <[float64][MaximumTakeoffMass][1050.0]>
+        <[float64][DefaultGrossMass][821.0]>
+        <[float64][WingSpan][9.74]>
         <[float64][WingArea][12.28]>
+        <[float64][LEMAC][0.859]>
+        <[float64][MAC][1.3]>
         <[float64][HeightOffset][-0.788]>
         <[float64][NoseWheelPositionX][1.472]>
-        <[float64][ApproachSpeed][29.7]> 
-        <[float64][PatternSpeed][32.4]>
-        <[float64][InitialClimbSpeed][27.0]>
+        <[float64][ApproachSpeed][32.5]>
+        <[float64][PatternSpeed][45.0]>
+        <[float64][InitialClimbSpeed][32.5]>
         <[copilot_flap_info_list][FlapInfo][]
            <[copilot_flap_info][FlapUp][]
               <[float64][FlapPosition][0.0]>
               <[float64][MinimumSpeed][26.5]>
               <[float64][OptimumSpeed][33.4]>
               <[float64][MaximumSpeed][78.0]>
-              <[bool][TakeOff][true]>
+              <[bool][Takeoff][true]>
               <[bool][Landing][true]>
            >
            <[copilot_flap_info][FlapApproach][]
@@ -39,7 +26,7 @@
               <[float64][MinimumSpeed][25.8]>
               <[float64][OptimumSpeed][32.4]>
               <[float64][MaximumSpeed][43.5]>
-              <[bool][TakeOff][true]>
+              <[bool][Takeoff][true]>
               <[bool][Landing][true]>
            >
            <[copilot_flap_info][FlapFull][]

@@ -2,7 +2,7 @@
     <[modelmanager][][]
         <[pointer_list_tmcontrol][ControlObjects][]
 
-			// barometer setting
+            // barometer setting
             <[control_cylinder][PressureSetting][]
                 <[string8][Type][knob]>
                 <[vector3_float64][R0][0.5682 0.1862 0.5005]>
@@ -17,7 +17,7 @@
                 <[float64][Radius][0.007]>
                 <[float64][Length][0.01]>
             >
-			// yokes
+            // yokes
             <[control_input][ElevatorTravel][]
                 <[uint32][InputID][ServoElevatorPosition.Output]>
                 <[float64][Scaling][0.05]>
@@ -89,7 +89,7 @@
             >
             <[control_cylinder][YokeHideLeft][]
                 <[string8][Type][button]>
-                <[vector3_float64][R0][	0.52 0.2529 0.3766 ]>
+                <[vector3_float64][R0][    0.52 0.2529 0.3766 ]>
                 <[matrix3_float64][B0][ 1.0 0.0 0.0  0.0 1.0 0.0  0.0 0.0 1.0 ]>
                 <[vector3_float64][Direction][ 1.0 0.0 0.0 ]>
                 <[control_message][OnPush][]
@@ -171,7 +171,7 @@
                 <[float64][Radius][0.018]>
                 <[float64][Length][0.03]>
             >
-			// throttle
+            // throttle
             <[control_input][ThrottleLeverAngle][]
                 <[uint32][InputID][ServoThrottle.Output]>
                 <[float64][Scaling][1.134464]>
@@ -196,7 +196,7 @@
                 <[float64][Radius][0.009]>
                 <[float64][Length][0.033]>
             >
-			// mixture lever
+            // mixture lever
             <[control_input][MixtureLeverInput][]
                 <[uint32][InputID][ServoMixture.Output]>
                 <[float64][Scaling][-1.745329]>
@@ -222,7 +222,7 @@
                 <[float64][Radius][0.01195]>
                 <[float64][Length][0.006]>
             >
-			// propeller speed lever
+            // propeller speed lever
             <[control_input][PropellerSpeedInput][]
                 <[uint32][InputID][PropellerSpeed.Output]>
                 <[float64][Scaling][-1.745329]>
