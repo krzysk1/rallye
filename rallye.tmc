@@ -36,7 +36,7 @@
         <[float64][MaximumLandingMass]   [1000.0]>
         <[float64][MaximumZeroFuelMass]  [1050.0]>
         <[float64][OperatingEmptyMass]   [615.0]> // 615 kg
-        <[float64][MaximumFuelMass]      [140.0]> // 220 l usable (235 l total)
+        <[float64][MaximumFuelMass]      [131.6]> // 220 l usable (235 l total)
         <[float64][MaximumPayload]       [360.0]> // 4p + 45kg
         <[uint32] [MaximumPersonsOnBoard][4]>
         <[float64][WingSpan]             [9.74]>
@@ -53,7 +53,7 @@
         <[float64][MaximumSpeed]         [78.0]>
         <[float64][MinimumAirspeed]      [27.0]>
         <[float64][ApproachAirspeed]     [32.5]>
-        <[float64][CruiseAirspeed]       [57.5]> 
+        <[float64][CruiseAirspeed]       [57.5]>
         <[float64][CruiseSpeed]          [67.5]>
         <[float64][MaximumAltitude]      [3657.6]>
         <[float64][CruiseAltitude]       [2438.0]>
@@ -77,8 +77,8 @@
     >
 >
 
-	// Datum Front face of engine firewall   = 1.0445
-	// Forward limit: 0.780 m (30.71 in.) aft of datum under 685 kg (1510 lbs
-	// Intermediate limit  0.943 m (37.13 in.) aft of datum at 1000 kg (2204 lbs)
-					 // 0.969 m (38.15 in.) aft of datum at 1050 kg (2314 lbs)
-	// Aft limit 1.047 m (41.22 in.) aft of datum
+    // Datum Front face of engine firewall   = 1.0445
+    // Forward limit: 0.780 m (30.71 in.) aft of datum under 685 kg (1510 lbs
+    // Intermediate limit  0.943 m (37.13 in.) aft of datum at 1000 kg (2204 lbs)
+                     // 0.969 m (38.15 in.) aft of datum at 1050 kg (2314 lbs)
+    // Aft limit 1.047 m (41.22 in.) aft of datum

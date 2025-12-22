@@ -80,9 +80,9 @@
             // Rigidbodies
 
             <[rigidbody][Fuselage][]
-                <[float64][Mass][370.2]>
+                <[float64][Mass][297.9]>
                 <[tmvector3d][InertiaLength][3.522 1.231 1.231]>
-                <[tmvector3d][R0][0.0 0.0 0.235]>
+                <[tmvector3d][R0][0.3 0.0 0.235]>
                 <[tmmatrix3d][B0][1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0]>
             >
             <[rigidbody][LeftWing][]
@@ -215,14 +215,14 @@
                 <[float64][Mass][0.0]>
                 <[string8][Body][Fuselage]>
                 <[tmvector3d][InertiaLength][ 0.5 0.5 0.5 ]>
-                <[tmvector3d][R0][ -1.414 0.0 0.0]>  // at at Station + 2.447 
+                <[tmvector3d][R0][ -0.931 0.0 0.0]>
                 <[float64][MaximumMass][45.9]>
             >
             <[persons][PersonsFront][]
-                <[float64][Mass][70.0]>
+                <[float64][Mass][80.0]>
                 <[string8][Body][Fuselage]>
                 <[tmvector3d][InertiaLength][ 0.5 0.5 0.5 ]>
-                <[tmvector3d][R0][ 0.770 0.0 0.0]>
+                <[tmvector3d][R0][ 0.569 0.0 0.0]>
                 <[float64][MinimumPersons][1.0]>
                 <[float64][MaximumPersons][2.0]>
             >
@@ -230,7 +230,7 @@
                 <[float64][Mass][0.0]>
                 <[string8][Body][Fuselage]>
                 <[tmvector3d][InertiaLength][ 1.0 1.0 1.0 ]>
-                <[tmvector3d][R0][ -0.144 0.0 0.0 ]>
+                <[tmvector3d][R0][ -0.261 0.0 0.0 ]>
                 <[float64][MaximumPersons][2.0]>
             >
             <[hook][TowHook][]

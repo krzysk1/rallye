@@ -2,7 +2,7 @@
     <[hints][][]
         // Socata Rallye MS893E
         <[float64][MaximumTakeoffMass][1050.0]>
-        <[float64][DefaultGrossMass][821.0]>
+        <[float64][DefaultGrossMass][826.6]>
         <[float64][WingSpan][9.74]>
         <[float64][WingArea][12.28]>
         <[float64][LEMAC][0.859]>
